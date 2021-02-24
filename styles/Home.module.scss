@@ -1,0 +1,79 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  height: 95vh;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  box-sizing: content-box;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.backgroundColor {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Assets/IMG_20190112_164232.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.titleBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-bottom: 200px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.title {
+  font-family: "Watone", cursive;
+  font-size: 70px;
+  transform: rotate(-13.25deg);
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  place-self: center;
+  color: #525252;
+}
+
+.subtitle {
+  font-family: "Watone", sans-serif;
+  position: absolute;
+  bottom: 100px;
+}
+
+.Vline {
+  transform: rotate(-90deg);
+  width: 6em;
+  position: absolute;
+  bottom: 0;
+}
+
+.scrollText {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: #525252;
+  right: -30px;
+  font-size: 1.2em;
+  font-family: "Watone", sans-serif;
+}
+
+.scrollArrow {
+  position: absolute;
+  right: 15px;
+  top: 58%;
+}
