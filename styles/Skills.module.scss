@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  height: 400px;
+  position: relative;
+
+  .Vline {
+    top: 25px;
+    position: absolute;
+    height: 0.5px;
+    transform: rotate(-90deg);
+    width: 3em;
+    background-color: white;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    border: none;
+
+    &:nth-of-type(2){ 
+      bottom: 28px;
+      top: initial;
+    }
+  }
+
+  .title {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+  }
+
+  .skillsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px;
+
+    .row {
+      display: flex;
+      margin: 10px 0;
+
+      &:nth-of-type(2) {
+        width: 60%;
+        justify-content: space-between;
+      }
+    }
+
+    .skill {
+      font-family: "Roboto";
+      font-weight: 100;
+      font-size: 1.2em;
+      color: white;
+      margin: 10px 20px;
+    }
+  }
+}

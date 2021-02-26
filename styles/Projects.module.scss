@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+
+  .title {
+    font-family: 'Watone';
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: .5em;
+    font-size: 3.5em
+  }
+
+  .p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    width: 85%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+
+  .swiper {
+    max-width: 90%;
+    border: none;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

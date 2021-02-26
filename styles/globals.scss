@@ -3,10 +3,12 @@
 $primary: darkblue;
 $secondary: lightblue;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -25,4 +27,9 @@ a {
 @font-face {
   font-family: "Watone";
   src: url("../Assets/Fonts/Watone.ttf") format("ttf")
+}
+
+@font-face{ 
+  font-family: "Roboto";
+  src: url("../Assets/Fonts/Roboto/Roboto-Light.ttf")  format("ttf");
 }
