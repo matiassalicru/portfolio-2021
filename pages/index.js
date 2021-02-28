@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "components/Layout";
 import Hamburger from "components/Icons/Hamburguer";
 import Arrow from "components/Icons/Arrow";
@@ -7,6 +8,9 @@ import about from "styles/About.module.scss";
 import skills from "styles/Skills.module.scss";
 import actual from "styles/Actual.module.scss";
 import projects from "styles/Projects.module.scss";
+import footer from "styles/Footer.module.scss";
+
+//Imports imgs
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
@@ -16,9 +20,11 @@ import SwiperCore, {
   A11y,
   Autoplay,
 } from "swiper";
+import Project from "components/Project";
 
 export default function Home() {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+
   return (
     <div className={home.container}>
       <Head>
@@ -97,47 +103,85 @@ export default function Home() {
             that I loved to make
           </p>
           <Swiper
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation
+            spaceBetween={1}
+            slidesPerView={1.2}
             className={projects.swiper}
-            pagination={{ clickable: true }}
             autoplay={{ delay: 2000 }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide>
-              <div className={projects.project}>
-                <button>Link</button>
-                <button>repo</button>
-              </div>
+              <Project
+                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <div className={projects.project}>
-                <button>Link</button>
-                <button>repo</button>
-              </div>
+              <Project
+                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <div className={projects.project}>
-                <button>Link</button>
-                <button>repo</button>
-              </div>
+              <Project
+                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <div className={projects.project}>
-                <button>Link</button>
-                <button>repo</button>
-              </div>
+              <Project
+                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              />
             </SwiperSlide>
-            ...
+            <SwiperSlide>
+              <Project
+                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Project
+                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              />
+            </SwiperSlide>
           </Swiper>
 
-          <p className={projects.p} style={{marginTop: 40, fontSize: 22}}>
+          <p className={projects.p} style={{ marginTop: 40, fontSize: 22 }}>
             Do you have a project in mind? Are you looking for a Front-end
             developer with experience in React? Do not hesitate to contact me
           </p>
+          <hr className={projects.Vline} />
+        </section>
+        <section className={footer.container}>
+          <hr className={footer.Vline} />
+
+          <div className={footer.main}>
+            <h1 className={footer.title}>Contact Data</h1>
+
+            <div className={footer.p_container}>
+              <p>mattiassalicru@gmail.com</p>
+              <p>+54 3834681214</p>
+              <p>Córdoba, Córdoba, Argentina</p>
+            </div>
+
+            <h1 className={footer.title}>Social Media</h1>
+            <div className={footer.social_media_container}>
+              <a href="https://github.com/matiassalicru">Github</a>
+              <a href="https://linkedin.com/in/matias-salicru">LinkedIn</a>
+              <a href="https://twitter.com/matiassalicru">Twitter</a>
+            </div>
+
+            <h1 className={footer.title}>Personal Info</h1>
+            <div className={footer.p_container}>
+              <p>Matias Salicrú</p>
+              <p>24 years old</p>
+              <p>Student of Systems enginnering</p>
+            </div>
+
+            <footer className={footer.foot}>
+              <small>Made with love by @matiassalicru 🥰</small>
+            </footer>
+          </div>
         </section>
       </Layout>
     </div>
