@@ -1,8 +1,8 @@
-const Arrow = () => {
+const Arrow = ({width = "8", height = "78"}) => {
   return (
     <svg
-      width="8"
-      height="78"
+      width={width}
+      height={height}
       viewBox="0 0 8 78"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +13,6 @@ const Arrow = () => {
       />
     </svg>
   );
-}
+};
 
 export default Arrow;

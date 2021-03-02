@@ -89,3 +89,11 @@
     bottom: 25px;
   }
 }
+
+@media screen and(min-width: 480px) {
+  .container{
+    // position: static;
+    // min-height: 0;
+    // margin-top: 900px;
+  }
+}

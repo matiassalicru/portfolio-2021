@@ -1,21 +1,39 @@
 import projects from "styles/Projects.module.scss";
+import Swal from "sweetalert2";
 
-const Project = ({ description, img, link, repo }) => {
+const Project = ({ description, img, link, repo, btns }) => {
+  const clicked = () => {
+    Swal.fire({
+      title: "Hello!",
+      text: "Do you want to continue",
+      confirmButtonText: "Cool",
+      cancelButtonText: 'neeel',
+      showCancelButton: true,
+      footer: "Hello footer",
+      customClass: {
+        container: `${projects.swalContainer}`,
+        header: `${projects.swalHeader}`,
+        footer: `${projects.swalFoot}`,
+        popup: `${projects.swalPopUp}`
+      },
+    });
+  };
+
   return (
     <>
-      <div className="project">
-        <div className="card">
+      <div className={projects.project} onClick={clicked}>
+        <div className={` card ${projects.card}`}>
           <p>{description}</p>
         </div>
-        <div className={projects.button_container}>
-          <button className={projects.btn_primary}>Link</button>
-          <button className={projects.btn_secondary}>Repo</button>
-        </div>
+        {btns && (
+          <div className={projects.button_container}>
+            <button className={projects.btn_primary}>Link</button>
+            <button className={projects.btn_secondary}>Repo</button>
+          </div>
+        )}
       </div>
-      <style jsx>{`
-        .project {
-        }
 
+      <style jsx>{`
         .card {
           height: 400px;
           width: 250px;
@@ -29,21 +47,11 @@ const Project = ({ description, img, link, repo }) => {
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
 
-        p {
-          display: flex;
-          align-items: center;
-          text-align: center;
-          color: white;
-          width: 90%;
-          height: 100%;
-          font-size: 1.25em;
-          padding: 0 10px;
-          opacity: 0;
-          border-radius: 35px;
-          transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        .foot {
+          background: red;
         }
       `}</style>
     </>

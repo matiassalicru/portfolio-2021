@@ -1,8 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "components/Layout";
-import Hamburger from "components/Icons/Hamburguer";
-import Arrow from "components/Icons/Arrow";
 import home from "styles/Home.module.scss";
 import about from "styles/About.module.scss";
 import skills from "styles/Skills.module.scss";
@@ -11,6 +8,7 @@ import projects from "styles/Projects.module.scss";
 import footer from "styles/Footer.module.scss";
 
 //Imports imgs
+import Arrow from "components/Icons/Arrow";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
@@ -35,9 +33,9 @@ export default function Home() {
       <Layout>
         <section className={home.backgroundColor}>
           <section className={home.section}>
-            <div className={home.menu}>
-              <Hamburger width="50" height="30" />
-            </div>
+            {/* <div className={home.menu}> */}
+            {/* <Hamburger width="50" height="30" /> */}
+            {/* </div> */}
             <div className={home.titleBox}>
               <h1 className={home.title}>Matias Salicrú</h1>
             </div>
@@ -67,22 +65,15 @@ export default function Home() {
           <hr className={skills.Vline} />
           <h1 className={skills.title}>What I'm good at</h1>
           <div className={skills.skillsContainer}>
-            <div className={skills.row}>
-              <p className={skills.skill}>Javascript</p>
-              <p className={skills.skill}>React</p>
-              <p className={skills.skill}>React-Redux</p>
-            </div>
+            <p className={skills.skill}>JavaScript</p>
+            <p className={skills.skill}>React</p>
+            <p className={skills.skill}>React-Redux</p>
 
-            <div className={skills.row}>
-              <p className={skills.skill}>NextJS</p>
-              <p className={skills.skill}>Figma</p>
-            </div>
+            <p className={skills.skill}>NextJS</p>
+            <p className={skills.skill}>Figma</p>
 
-            <div className={skills.row}>
-              <p className={skills.skill}>Spanish & english</p>
-            </div>
+            <p className={skills.skill}>Spanish & english</p>
           </div>
-          z
           <hr className={skills.Vline} />
         </section>
         <section className={actual.container}>
@@ -91,7 +82,8 @@ export default function Home() {
 
           <p className={actual.p}>
             Right now I'm working in my last project, a website for a little
-            store called @darkstar.ar while I'm also in a course about NodeJS.
+            store called @darkstar.ar (you can visit it in my projects below)
+            while I'm also in a course about NodeJS.
           </p>
 
           <hr className={actual.Vline} />
@@ -106,49 +98,80 @@ export default function Home() {
             spaceBetween={1}
             slidesPerView={1.2}
             className={projects.swiper}
-            autoplay={{ delay: 2000 }}
           >
             <SwiperSlide>
               <Project
                 description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
                 img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                btns={true}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Project
+                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+                img=""
+                btns={true}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
                 description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
                 img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                btns={true}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
                 description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
                 img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                btns={true}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
                 description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
                 img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                btns={true}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
                 description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
                 img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Project
-                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                btns={true}
               />
             </SwiperSlide>
           </Swiper>
-
+          <article className={projects.projects_container}>
+            <Project
+              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            />
+            <Project
+              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+              img="https://i.pinimg.com/564x/c1/1f/0b/c11f0b4fe9a159c897e02394566fe709.jpg"
+            />
+            <Project
+              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            />
+            <Project
+              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            />
+            <Project
+              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+              img="https://i.pinimg.com/564x/c7/57/77/c7577748314fd985a434179b3a13d5a2.jpg"
+            />
+            <Project
+              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
+              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            />
+          </article>
           <p className={projects.p} style={{ marginTop: 40, fontSize: 22 }}>
             Do you have a project in mind? Are you looking for a Front-end
-            developer with experience in React? Do not hesitate to contact me
+            developer with experience in React?
+            <span> Do not hesitate to contact me </span>
           </p>
           <hr className={projects.Vline} />
         </section>

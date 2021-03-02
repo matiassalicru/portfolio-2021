@@ -42,44 +42,6 @@
     border: none;
   }
 
-  .card {
-    height: 400px;
-    width: 250px;
-    border-radius: 35px;
-    margin: 0 0 23px 0;
-    border: none;
-    background-image: url("../Assets/head1.jpg");
-    // background-image: url(../Assets/img.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 6px 6px #00000085;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    &:hover {
-      p {
-        opacity: 1;
-        background-color: #1f1f1f40;
-      }
-    }
-
-    p {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: white;
-      width: 100%;
-      height: 100%;
-      font-size: 1.25em;
-      padding: 0 10px;
-      opacity: 0;
-      border-radius: 35px;
-      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-  }
-
   .button_container {
     display: flex;
     flex-direction: row;
@@ -108,5 +70,139 @@
     @extend .btn;
     background-color: #1f1f1f;
     color: white;
+  }
+
+  .projects_container {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 480px) {
+  .projects.containerSwal {
+    background: red;
+  }
+
+  .swalFoot {
+    color: red !important;
+  }
+
+  .swalHeader {
+  border: 1px solid white !important;
+    h2 {
+      color: red;
+    }
+  }
+
+  .swalPopUp{
+    background: #525252 !important;
+    border-radius: 1px !important;
+    border: 5px solid white !important;
+  }
+
+  .container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    .title {
+      font-size: 5em;
+    }
+
+    .p {
+      font-family: "Roboto";
+      font-weight: 300;
+      width: 65%;
+      font-size: 1.5em;
+      text-align: center;
+      margin: 50px 0 50px 0;
+      border: 1px solid black;
+      padding: 30px;
+      border-radius: 10px;
+
+      span {
+        color: violet;
+        font-weight: 400;
+      }
+    }
+
+    .swiper {
+      display: none;
+    }
+
+    .projects_container {
+      display: grid;
+      align-self: center;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 200px 200px 200px;
+      place-items: center;
+      grid-gap: 20px;
+      height: 100%;
+
+      grid-template-areas:
+        "first second third"
+        "first fifth third "
+        "fourth fifth sixth";
+
+      .card {
+        &:hover {
+          cursor: pointer;
+          p {
+            opacity: 1;
+            background-color: #000000a4;
+            padding: 5px;
+          }
+        }
+
+        p {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: white;
+          width: 100%;
+          height: 100%;
+          font-size: 1.25em;
+          padding: 0 10px;
+          opacity: 0;
+          border-radius: 35px;
+          transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+      }
+
+      :nth-of-type(1) {
+        grid-area: first;
+        width: 100%;
+        height: 100%;
+      }
+
+      :nth-of-type(2) {
+        grid-area: second;
+        width: 100%;
+        height: 100%;
+      }
+
+      :nth-of-type(3) {
+        grid-area: third;
+        width: 100%;
+        height: 100%;
+      }
+
+      :nth-of-type(4) {
+        grid-area: fourth;
+        width: 100%;
+        height: 100%;
+      }
+
+      :nth-of-type(5) {
+        grid-area: fifth;
+        width: 100%;
+        height: 100%;
+      }
+
+      :nth-of-type(6) {
+        grid-area: sixth;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }

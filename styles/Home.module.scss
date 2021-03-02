@@ -68,7 +68,7 @@
   width: 6em;
   background-color: black;
   border: none;
-  height: .5px;
+  height: 0.5px;
   position: absolute;
   bottom: 0;
 }
@@ -86,4 +86,50 @@
   position: absolute;
   right: 15px;
   top: 58%;
+}
+
+@media screen and(min-width: 480px ) {
+  .container {
+    height: 100vh;
+
+    .section{
+      height: 100%;
+    }
+    .titleBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      position: relative;
+
+      .title {
+        font-size: 140px;
+        font-weight: 100;
+        letter-spacing: 10px;
+        position: absolute;
+        color: #3d3d3d;
+      }
+    }
+
+    .scrollText{
+      font-size: 2em;
+      font-weight: 100;
+    }
+
+    .scrollArrow{
+      top: 63%;
+      right: 45px;
+    }
+
+    .subtitle{
+      font-size: 2em;
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+
+    .Vline{
+      width: 9em;
+      bottom: -10px;
+    }
+  }
 }
