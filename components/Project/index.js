@@ -5,17 +5,33 @@ const Project = ({ description, img, link, repo, btns, modal }) => {
   const clicked = () => {
     if (modal) {
       Swal.fire({
-        title: "Hello!",
-        text: "Do you want to continue",
-        confirmButtonText: "Cool",
-        cancelButtonText: "neeel",
+        // title: "Hello!",
+        text: `${description}`,
+        confirmButtonText: "Link",
+        cancelButtonText: "Repo",
         showCancelButton: true,
-        footer: "Hello footer",
+        footer: "Project deployed on Netlify",
         customClass: {
           container: `${projects.swalContainer}`,
           header: `${projects.swalHeader}`,
           footer: `${projects.swalFoot}`,
           popup: `${projects.swalPopUp}`,
+          
+          title: "...",
+          closeButton: "...",
+          icon: "...",
+          image: "...",
+          content: "...",
+          htmlContainer: "...",
+          input: "...",
+          inputLabel: "...",
+          validationMessage: "...",
+          actions: "...",
+          confirmButton: "...",
+          denyButton: "...",
+          cancelButton: "...",
+          loader: "...",
+          footer: "....",
         },
       });
     } else {

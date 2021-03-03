@@ -109,7 +109,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://i.pinimg.com/564x/c7/57/77/c7577748314fd985a434179b3a13d5a2.jpg"
+                img="https://i.ibb.co/L8Dddbd/login.png"
                 btns={true}
               />
             </SwiperSlide>
@@ -144,8 +144,8 @@ export default function Home() {
           </Swiper>
           <article className={projects.projects_container}>
             <Project
-              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              description="Login app donde utilicé firebase authentication, proyecto creado en torno a React Js"
+              img="https://i.ibb.co/jgK7Gb1/login.png"
               modal
             />
             <Project
