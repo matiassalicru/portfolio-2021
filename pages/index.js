@@ -109,7 +109,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img=""
+                img="https://i.pinimg.com/564x/c7/57/77/c7577748314fd985a434179b3a13d5a2.jpg"
                 btns={true}
               />
             </SwiperSlide>
@@ -146,26 +146,32 @@ export default function Home() {
             <Project
               description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
               img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              modal
             />
             <Project
               description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
               img="https://i.pinimg.com/564x/c1/1f/0b/c11f0b4fe9a159c897e02394566fe709.jpg"
+              modal
             />
             <Project
               description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
               img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              modal
             />
             <Project
               description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
               img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              modal
             />
             <Project
               description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
               img="https://i.pinimg.com/564x/c7/57/77/c7577748314fd985a434179b3a13d5a2.jpg"
+              modal
             />
             <Project
               description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
               img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              modal
             />
           </article>
           <p className={projects.p} style={{ marginTop: 40, fontSize: 22 }}>
@@ -179,32 +185,30 @@ export default function Home() {
           <hr className={footer.Vline} />
 
           <div className={footer.main}>
-            <h1 className={footer.title}>Contact Data</h1>
-
             <div className={footer.p_container}>
+              <h1 className={footer.title}>Contact Data</h1>
               <p>mattiassalicru@gmail.com</p>
               <p>+54 3834681214</p>
               <p>Córdoba, Córdoba, Argentina</p>
             </div>
 
-            <h1 className={footer.title}>Social Media</h1>
             <div className={footer.social_media_container}>
+              <h1 className={footer.title}>Social Media</h1>
               <a href="https://github.com/matiassalicru">Github</a>
               <a href="https://linkedin.com/in/matias-salicru">LinkedIn</a>
               <a href="https://twitter.com/matiassalicru">Twitter</a>
             </div>
 
-            <h1 className={footer.title}>Personal Info</h1>
             <div className={footer.p_container}>
+              <h1 className={footer.title}>Personal Info</h1>
               <p>Matias Salicrú</p>
               <p>24 years old</p>
               <p>Student of Systems enginnering</p>
             </div>
-
-            <footer className={footer.foot}>
-              <small>Made with love by @matiassalicru 🥰</small>
-            </footer>
           </div>
+          <footer className={footer.foot}>
+            <small>Made with love by @matiassalicru 🥰</small>
+          </footer>
         </section>
       </Layout>
     </div>

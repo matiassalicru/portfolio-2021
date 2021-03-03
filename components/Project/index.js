@@ -1,22 +1,26 @@
 import projects from "styles/Projects.module.scss";
 import Swal from "sweetalert2";
 
-const Project = ({ description, img, link, repo, btns }) => {
+const Project = ({ description, img, link, repo, btns, modal }) => {
   const clicked = () => {
-    Swal.fire({
-      title: "Hello!",
-      text: "Do you want to continue",
-      confirmButtonText: "Cool",
-      cancelButtonText: 'neeel',
-      showCancelButton: true,
-      footer: "Hello footer",
-      customClass: {
-        container: `${projects.swalContainer}`,
-        header: `${projects.swalHeader}`,
-        footer: `${projects.swalFoot}`,
-        popup: `${projects.swalPopUp}`
-      },
-    });
+    if (modal) {
+      Swal.fire({
+        title: "Hello!",
+        text: "Do you want to continue",
+        confirmButtonText: "Cool",
+        cancelButtonText: "neeel",
+        showCancelButton: true,
+        footer: "Hello footer",
+        customClass: {
+          container: `${projects.swalContainer}`,
+          header: `${projects.swalHeader}`,
+          footer: `${projects.swalFoot}`,
+          popup: `${projects.swalPopUp}`,
+        },
+      });
+    } else {
+      return
+    }
   };
 
   return (
