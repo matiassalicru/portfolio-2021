@@ -76,6 +76,20 @@
     display: none;
   }
 
+  a:last-of-type {
+      cursor: pointer;
+      color: violet;
+      transition: all .2s ease-in-out;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 15px;
+      height: fit-content;
+
+      &:hover{
+        box-shadow: 0 2px 5px black;
+      }
+    }
+
   .swiper {
     .card {
       p {
@@ -144,16 +158,29 @@
       font-family: "Roboto";
       font-weight: 300;
       width: 65%;
-      font-size: 1.5em;
+      font-size: 22px;
       text-align: center;
       margin: 50px 0 50px 0;
       border: 1px solid black;
       padding: 30px;
       border-radius: 10px;
+      margin-top: 0;
 
       span {
         color: violet;
         font-weight: 400;
+      }
+    }
+
+    a:last-of-type {
+      cursor: pointer;
+      color: violet;
+      transition: all .2s ease-in-out;
+      height: fit-content;
+      padding: 10px;
+
+      &:hover{
+        box-shadow: 0 2px 5px black;
       }
     }
 

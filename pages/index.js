@@ -19,9 +19,20 @@ import SwiperCore, {
   Autoplay,
 } from "swiper";
 import Project from "components/Project";
+import axios from "axios";
 
 export default function Home() {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+
+  const download = (url, filename) => {
+    axios
+      .get(url, {
+        responseType: "blob",
+      })
+      .then((res) => {
+        console.log(res);
+      });
+  };
 
   return (
     <div className={home.container}>
@@ -33,9 +44,6 @@ export default function Home() {
       <Layout>
         <section className={home.backgroundColor}>
           <section className={home.section}>
-            {/* <div className={home.menu}> */}
-            {/* <Hamburger width="50" height="30" /> */}
-            {/* </div> */}
             <div className={home.titleBox}>
               <h1 className={home.title}>Matias Salicrú</h1>
             </div>
@@ -54,10 +62,10 @@ export default function Home() {
           <h1 className={about.title}>My story</h1>
           <div className={about.profileImage}></div>
           <p className={about.story}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            maiores, quisquam suscipit voluptas nobis ullam ipsa ea fuga
-            tempora, et soluta. Asperiores a esse corporis explicabo eveniet
-            veritatis ea facere.
+            I'm Matias, 24 years old, a student of systems enginnering who is
+            looking for his first job in IT, I'm a self taught developer who has
+            been making his road to front-end developer since February 2020.
+            I like team work, love technology, and I have a mindset of never stop learning! 
           </p>
           <hr className={about.Vline} />
         </section>
@@ -233,6 +241,14 @@ export default function Home() {
             developer with experience in React?
             <span> Do not hesitate to contact me </span>
           </p>
+          <a
+            className={projects.p}
+            style={{ marginTop: 0, fontSize: 22, width: "fit-content" }}
+            target="_blank"
+            href="https://drive.google.com/file/d/1f8i_7tjRLYS1vNQujAtMaoMCbohxyI9m/view?usp=sharing"
+          >
+            Download resume
+          </a>
           <hr className={projects.Vline} />
         </section>
         <section className={footer.container}>
