@@ -101,76 +101,130 @@ export default function Home() {
           >
             <SwiperSlide>
               <Project
-                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                title="Darkstar.ar"
+                description="2nd Freelance Job, An e-commerce website for an entrepreneurship called @darkstar.ar, based in React"
+                img="https://i.ibb.co/wKt6x5F/darkstar.png"
                 btns={true}
+                link="https://darkstar.ar/"
+                repo="https://github.com/matiassalicru/darkstar"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
-                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://i.ibb.co/L8Dddbd/login.png"
+                title="Login App"
+                description="Login App, made in a day just to play with Firebase Authentication"
+                img="https://i.ibb.co/1Zm1qHt/login.png"
                 btns={true}
+                link="https://login-firebase.netlify.app/"
+                repo="https://github.com/matiassalicru/Login-app"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
-                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                title="Journaling"
+                description="Journal App made in React with Firebase in MERN Course"
+                img="https://i.ibb.co/mJXqqYh/journal.png"
                 btns={true}
+                link="https://react-app-cursofh.web.app/"
+                repo="https://github.com/matiassalicru/JournalApp"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
-                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                title="UPO"
+                description="First freelance job, a e-commerce website for an entrepenourship, my first web using React."
+                img="https://i.ibb.co/pZqJcr7/upo.png"
                 btns={true}
+                link="https://upo.com.ar/"
+                repo="https://github.com/matiassalicru/upo-bastidores"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
-                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                title="TodosApp"
+                description="TodoApp made it with React using hooks like useReducer and useContext, also implemented Custom Hooks, works with localStorage"
+                img="https://i.ibb.co/tsFg4sV/todolist.png"
                 btns={true}
+                link="https://apptodos.netlify.app/"
+                repo="https://github.com/matiassalicru/TodoList"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Project
-                description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-                img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+                title="Portfolio"
+                description="This portfolio made it with Next.JS, my very first project in Next, I have plans for very big changes upcoming!"
+                img="https://i.ibb.co/NmMJ4vL/portfolio.png"
                 btns={true}
+                link=""
+                repo="https://github.com/matiassalicru/portfolio-2021"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Project
+                title="Gif Experts App"
+                description="Gifs App using giphy Api, based on React, with a search bar"
+                img="https://i.ibb.co/JF4bdq3/giphy.png"
+                btns={true}
+                link="https://react-app-cursofh.web.app/"
+                repo="https://github.com/matiassalicru/JournalApp"
               />
             </SwiperSlide>
           </Swiper>
           <article className={projects.projects_container}>
             <Project
-              description="Login app donde utilicé firebase authentication, proyecto creado en torno a React Js"
-              img="https://i.ibb.co/jgK7Gb1/login.png"
+              title="TodosApp"
+              description="TodoApp made it with React using hooks like useReducer and useContext, also implemented Custom Hooks, works with localStorage"
+              img="https://i.ibb.co/tsFg4sV/todolist.png"
+              link="https://apptodos.netlify.app/"
+              repo="https://github.com/matiassalicru/TodoList"
               modal
             />
             <Project
-              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-              img="https://i.pinimg.com/564x/c1/1f/0b/c11f0b4fe9a159c897e02394566fe709.jpg"
+              title="Journaling"
+              description="Journal App made in React with Firebase in MERN Course"
+              img="https://i.ibb.co/mJXqqYh/journal.png"
+              link="https://react-app-cursofh.web.app/"
+              repo="https://github.com/matiassalicru/JournalApp"
               modal
             />
             <Project
-              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              title="Login App"
+              description="Login App, made in a day just to play with Firebase Authentication"
+              img="https://i.ibb.co/1Zm1qHt/login.png"
+              link="https://login-firebase.netlify.app/"
+              repo="https://github.com/matiassalicru/Login-app"
               modal
             />
             <Project
-              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              title="UPO"
+              description="First freelance job, a e-commerce website for an entrepenourship, my first web using React."
+              img="https://i.ibb.co/pZqJcr7/upo.png"
+              link="https://upo.com.ar/"
+              repo="https://github.com/matiassalicru/upo-bastidores"
               modal
             />
             <Project
-              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-              img="https://i.pinimg.com/564x/c7/57/77/c7577748314fd985a434179b3a13d5a2.jpg"
+              title="Darkstar.ar"
+              description="2nd Freelance Job, An e-commerce website for an entrepreneurship called @darkstar.ar, based in React"
+              img="https://i.ibb.co/wKt6x5F/darkstar.png"
               modal
+              link="https://darkstar.ar/"
+              repo="https://github.com/matiassalicru/darkstar"
             />
             <Project
-              description="Para este catbot utilicé React y lo cree en un curso de una comunidad llamada Refactor Devs"
-              img="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              title="Gifs Expert App"
+              description="Gifs App using giphy Api, based on React, with a search bar"
+              img="https://i.ibb.co/JF4bdq3/giphy.png"
+              modal
+              link="https://matiassalicru.github.io/Gif-Expert-App/"
+              repo="https://github.com/matiassalicru/Gif-Expert-App"
+            />
+            <Project
+              title="Portfolio"
+              description="This portfolio made it with Next.JS, my very first project in Next, I have plans for very big changes upcoming!"
+              img="https://i.ibb.co/NmMJ4vL/portfolio.png"
+              link="https://matiassalicru.github.io/Gif-Expert-App/"
+              repo="https://github.com/matiassalicru/Gif-Expert-App"
               modal
             />
           </article>

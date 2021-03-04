@@ -75,25 +75,60 @@
   .projects_container {
     display: none;
   }
+
+  .swiper {
+    .card {
+      p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 100%;
+        font-size: 1.25em;
+        padding: 0 10px;
+        opacity: 0;
+        border-radius: 35px;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover {
+          opacity: 1;
+          background: rgba($color: #000000, $alpha: 0.7);
+        }
+      }
+    }
+  }
 }
 
 @media screen and(min-width: 480px) {
-  .projects.containerSwal {
-    background: red;
-  }
-
-  .swalFoot {
-    color: red !important;
+  .swalContainer {
+    background: rgba(255, 255, 255, 0.39) !important;
   }
 
   .swalHeader {
     display: none;
   }
 
+  .swalLinkBtn {
+    background: rgb(241, 185, 99) !important;
+  }
+
+  .swalRepoBtn {
+    background: rgb(143, 201, 255) !important;
+  }
+
   .swalPopUp {
     background: #ffffff !important;
     border-radius: 8px !important;
-    border: 1.5px solid rgb(0, 0, 0) !important;
+    border: 1px solid rgb(161, 161, 161) !important;
+    height: 300px;
+    padding: 2em 1.25em 1.25em 1.25em !important ;
+    justify-content: space-between !important;
+    width: 35em !important;
+
+    .swalFoot {
+      font-style: italic;
+    }
   }
 
   .container {
@@ -130,7 +165,7 @@
       display: grid;
       align-self: center;
       grid-template-columns: 250px 250px 250px;
-      grid-template-rows: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px 200px;
       place-items: center;
       grid-gap: 20px;
       height: 100%;
@@ -138,7 +173,8 @@
       grid-template-areas:
         "first second third"
         "first fifth third "
-        "fourth fifth sixth";
+        "fourth fifth sixth"
+        "fourth seven sixth";
 
       .card {
         &:hover {
@@ -196,6 +232,12 @@
 
       :nth-of-type(6) {
         grid-area: sixth;
+        width: 100%;
+        height: 100%;
+      }
+
+      :nth-of-type(7) {
+        grid-area: seven;
         width: 100%;
         height: 100%;
       }
