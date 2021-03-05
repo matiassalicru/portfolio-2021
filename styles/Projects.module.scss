@@ -21,6 +21,11 @@
     font-size: 1.5em;
     text-align: center;
     margin: 0 0 50px 0;
+
+    span {
+      color: violet;
+      font-weight: 400;
+    }
   }
 
   .swiper {
@@ -76,18 +81,18 @@
   }
 
   a:last-of-type {
-      cursor: pointer;
-      color: violet;
-      transition: all .2s ease-in-out;
-      border: 1px solid black;
-      border-radius: 20px;
-      padding: 15px;
-      height: fit-content;
+    cursor: pointer;
+    color: violet;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    height: fit-content;
 
-      &:hover{
-        box-shadow: 0 2px 5px black;
-      }
+    &:hover {
+      box-shadow: 0 2px 5px black;
     }
+  }
 
   .swiper {
     .card {
@@ -174,11 +179,11 @@
     a:last-of-type {
       cursor: pointer;
       color: violet;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       height: fit-content;
       padding: 10px;
 
-      &:hover{
+      &:hover {
         box-shadow: 0 2px 5px black;
       }
     }

@@ -23,12 +23,13 @@
 }
 
 .backgroundColor {
+  background-image: url("../Assets/head1.jpg");
   width: 100%;
   height: 100%;
-  background-image: url("../Assets/head1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .menu {
@@ -70,11 +71,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      color: #e6dbfa;
+      color: #100c16;
       -webkit-text-stroke: 0vw transparent;
       border-right: 2px solid #e6dbfa;
       overflow: hidden;
-      animation: animate 6s linear infinite;
+      animation: animate 10s linear infinite;
     }
 
     @keyframes animate {
@@ -144,11 +145,11 @@
       .title {
         font-family: "Watone", "Roboto";
         -webkit-text-stroke: 0;
-        font-size: 130px;
+        font-size: 140px;
         font-weight: 100;
         letter-spacing: 10px;
         transform: rotate(-13.25deg);
-        color: #3d3d3d;
+        color: #2e2e2e;
 
         &::before {
           content: "";

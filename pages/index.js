@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Layout from "components/Layout";
 import home from "styles/Home.module.scss";
@@ -20,9 +21,15 @@ import SwiperCore, {
 } from "swiper";
 import Project from "components/Project";
 import axios from "axios";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   const download = (url, filename) => {
     axios
@@ -42,8 +49,8 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <section className={home.backgroundColor}>
-          <section className={home.section}>
+        <section data-aos="fade" className={home.backgroundColor}>
+          <section data-aos="fade" className={home.section}>
             <div className={home.titleBox}>
               <h1 className={home.title} data-text="Matias">
                 Matias
@@ -63,7 +70,7 @@ export default function Home() {
           </section>
         </section>
 
-        <section className={about.container}>
+        <section data-aos="fade-up" className={about.container}>
           <h1 className={about.title}>My story</h1>
           <div className={about.profileImage}></div>
           <p className={about.story}>
@@ -77,9 +84,9 @@ export default function Home() {
             </b>
             ready to get his
             <i>
-              <b> first job experience in IT </b>
+              <b> first job experience in IT, </b>
             </i>
-            , I've been working in some projects
+            I've been working in some projects
             <i> ( see below ) </i>
             to put in practice all the things that I learned in the last year.
             <b>
@@ -91,7 +98,7 @@ export default function Home() {
           </p>
           <hr className={about.Vline} />
         </section>
-        <section className={skills.container}>
+        <section data-aos="slide-up" className={skills.container}>
           <hr className={skills.Vline} />
           <h1 className={skills.title}>What I'm good at</h1>
           <div className={skills.skillsContainer}>
@@ -106,7 +113,7 @@ export default function Home() {
           </div>
           <hr className={skills.Vline} />
         </section>
-        <section className={actual.container}>
+        <section data-aos="slide-up" className={actual.container}>
           <hr className={actual.Vline} />
           <h1 className={actual.title}>What I'm in right now</h1>
 
@@ -118,7 +125,7 @@ export default function Home() {
 
           <hr className={actual.Vline} />
         </section>
-        <section className={projects.container}>
+        <section data-aos="fade-up" className={projects.container}>
           <h1 className={projects.title}>My projects</h1>
           <p className={projects.p}>
             All the experience that I earned, comes from this little projects
@@ -132,7 +139,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 title="Darkstar.ar"
-                description="2nd Freelance Job, An e-commerce website for an entrepreneurship called @darkstar.ar, based in React"
+                description="2nd Freelance Job, An e-commerce website for an entrepreneurship called @darkstar.ar, based in React, this was the largest project I've ever made"
                 img="https://i.ibb.co/wKt6x5F/darkstar.png"
                 btns={true}
                 link="https://darkstar.ar/"
@@ -143,7 +150,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 title="Login App"
-                description="Login App, made in a day just to play with Firebase Authentication"
+                description="Login App, made in a day just to learn about Firebase Authentication"
                 img="https://i.ibb.co/1Zm1qHt/login.png"
                 btns={true}
                 link="https://login-firebase.netlify.app/"
@@ -154,7 +161,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 title="Journaling"
-                description="Journal App made in React with Firebase in MERN Course"
+                description="Journal App made in React with Firebase in MERN Course from Fernando Herrera"
                 img="https://i.ibb.co/mJXqqYh/journal.png"
                 btns={true}
                 link="https://react-app-cursofh.web.app/"
@@ -165,7 +172,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 title="UPO"
-                description="First freelance job, a e-commerce website for an entrepenourship, my first web using React."
+                description="First freelance job, a e-commerce website for an entrepenourship, my first website using React!"
                 img="https://i.ibb.co/pZqJcr7/upo.png"
                 btns={true}
                 link="https://upo.com.ar/"
@@ -176,7 +183,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 title="TodosApp"
-                description="TodoApp made it with React using hooks like useReducer and useContext, also implemented Custom Hooks, works with localStorage"
+                description="TodoApp made it with React, learning hooks like useReducer and useContext, also implemented Custom Hooks, works with localStorage"
                 img="https://i.ibb.co/tsFg4sV/todolist.png"
                 btns={true}
                 link="https://apptodos.netlify.app/"
@@ -187,7 +194,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 title="Portfolio"
-                description="This portfolio made it with Next.JS, my very first project in Next, I have plans for very big changes upcoming!"
+                description="This portfolio made it with Next.JS, my very first project in Next, this project is in constant update, a blog is the following step!"
                 img="https://i.ibb.co/NmMJ4vL/portfolio.png"
                 btns={true}
                 link=""
@@ -198,7 +205,7 @@ export default function Home() {
             <SwiperSlide>
               <Project
                 title="Gif Experts App"
-                description="Gifs App using giphy Api, based on React, with a search bar"
+                description="Gifs App using giphy Api, based on React, with a search bar, learned a lot about consuming API's"
                 img="https://i.ibb.co/JF4bdq3/giphy.png"
                 btns={true}
                 link="https://matiassalicru.github.io/Gif-Expert-App/"
@@ -210,7 +217,7 @@ export default function Home() {
           <article className={projects.projects_container}>
             <Project
               title="TodosApp"
-              description="TodoApp made it with React using hooks like useReducer and useContext, also implemented Custom Hooks, works with localStorage"
+              description="TodoApp made it with React, learning hooks like useReducer and useContext, also implemented Custom Hooks, works with localStorage"
               img="https://i.ibb.co/tsFg4sV/todolist.png"
               link="https://apptodos.netlify.app/"
               repo="https://github.com/matiassalicru/TodoList"
@@ -219,7 +226,7 @@ export default function Home() {
             />
             <Project
               title="Journaling"
-              description="Journal App made in React with Firebase in MERN Course"
+              description="Journal App made in React with Firebase in MERN Course from Fernando Herrera"
               img="https://i.ibb.co/mJXqqYh/journal.png"
               link="https://react-app-cursofh.web.app/"
               repo="https://github.com/matiassalicru/JournalApp"
@@ -228,7 +235,7 @@ export default function Home() {
             />
             <Project
               title="Login App"
-              description="Login App, made in a day just to play with Firebase Authentication"
+              description="Login App, made in a day just to learn about Firebase Authentication"
               img="https://i.ibb.co/1Zm1qHt/login.png"
               link="https://login-firebase.netlify.app/"
               repo="https://github.com/matiassalicru/Login-app"
@@ -237,7 +244,7 @@ export default function Home() {
             />
             <Project
               title="UPO"
-              description="First freelance job, a e-commerce website for an entrepenourship, my first web using React."
+              description="First freelance job, a e-commerce website for an entrepenourship, my first website using React."
               img="https://i.ibb.co/pZqJcr7/upo.png"
               link="https://upo.com.ar/"
               repo="https://github.com/matiassalicru/upo-bastidores"
@@ -255,7 +262,7 @@ export default function Home() {
             />
             <Project
               title="Gifs Expert App"
-              description="Gifs App using giphy Api, based on React, with a search bar"
+              description="Gifs App using giphy Api, based on React, with a search bar, learned a lot about consuming API's"
               img="https://i.ibb.co/JF4bdq3/giphy.png"
               modal
               link="https://matiassalicru.github.io/Gif-Expert-App/"
@@ -263,8 +270,9 @@ export default function Home() {
               deployed="Github Pages"
             />
             <Project
+              data-aos="slide-up"
               title="Portfolio"
-              description="This portfolio made it with Next.JS, my very first project in Next, I have plans for very big changes upcoming!"
+              description="This portfolio made it with Next.JS, my very first project in Next, this project is in constant update, a blog is the following step!"
               img="https://i.ibb.co/NmMJ4vL/portfolio.png"
               link="https://matiassalicru.com"
               repo="https://github.com/matiassalicru/portfolio-2021"
@@ -273,8 +281,8 @@ export default function Home() {
             />
           </article>
           <p className={projects.p} style={{ marginTop: 40, fontSize: 22 }}>
-            Do you have a project in mind? Are you looking for a Front-end
-            developer with experience in React?
+            Are you looking for a Front-end developer with experience in React?
+            I would love to talk with you <br />
             <span> Do not hesitate to contact me </span>
           </p>
           <a
@@ -290,7 +298,7 @@ export default function Home() {
         <section className={footer.container}>
           <hr className={footer.Vline} />
 
-          <div className={footer.main}>
+          <div data-aos="fade-up" className={footer.main}>
             <div className={footer.p_container}>
               <h1 className={footer.title}>Contact Data</h1>
               <p>mattiassalicru@gmail.com</p>
@@ -298,14 +306,14 @@ export default function Home() {
               <p>Córdoba, Córdoba, Argentina</p>
             </div>
 
-            <div className={footer.social_media_container}>
+            <div data-aos="fade-up" className={footer.social_media_container}>
               <h1 className={footer.title}>Social Media</h1>
               <a href="https://github.com/matiassalicru">Github</a>
               <a href="https://linkedin.com/in/matias-salicru">LinkedIn</a>
               <a href="https://twitter.com/matiassalicru">Twitter</a>
             </div>
 
-            <div className={footer.p_container}>
+            <div data-aos="fade-up" className={footer.p_container}>
               <h1 className={footer.title}>Personal Info</h1>
               <p>Matias Salicrú</p>
               <p>24 years old</p>
