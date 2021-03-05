@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Watone';
+    src: url('WatoneRegular.eot');
+    src: url('WatoneRegular.eot?#iefix') format('embedded-opentype'),
+        url('WatoneRegular.woff2') format('woff2'),
+        url('WatoneRegular.woff') format('woff'),
+        url('WatoneRegular.ttf') format('truetype'),
+        url('WatoneRegular.svg#WatoneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

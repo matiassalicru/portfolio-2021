@@ -21,7 +21,7 @@
     margin: 20px 0;
     border: 1px solid white;
     border-radius: 50%;
-    background-image: url("../Assets/profile.jpeg");
+    background-image: url("../Assets/profile2.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -58,11 +58,11 @@
 
     .profileImage {
       grid-area: profile;
-      width: 400px;
-      height: 400px;
-      background-image: url("../Assets/profile.jpeg");
+      width: 450px;
+      height: 450px;
+      background-image: url("../Assets/profile3.jpg");
       background-size: cover;
-      background-position: center;
+      background-position: top;
       border: none;
     }
 
@@ -70,7 +70,7 @@
       grid-area: title;
       font-size: 6em;
     }
-
+    
     .story {
       grid-area: story;
       font-size: 1.6em;

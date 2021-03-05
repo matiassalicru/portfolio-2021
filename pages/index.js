@@ -45,7 +45,12 @@ export default function Home() {
         <section className={home.backgroundColor}>
           <section className={home.section}>
             <div className={home.titleBox}>
-              <h1 className={home.title}>Matias Salicrú</h1>
+              <h1 className={home.title} data-text="Matias">
+                Matias
+              </h1>
+              <h1 className={home.title} data-text="Salicrú">
+                Salicrú
+              </h1>
             </div>
             <h3 className={home.subtitle}>Front-end Developer</h3>
 
@@ -62,10 +67,27 @@ export default function Home() {
           <h1 className={about.title}>My story</h1>
           <div className={about.profileImage}></div>
           <p className={about.story}>
-            I'm Matias, 24 years old, a student of systems enginnering who is
-            looking for his first job in IT, I'm a self taught developer who has
-            been making his road to front-end developer since February 2020.
-            I like team work, love technology, and I have a mindset of never stop learning! 
+            Hi! My name is
+            <b>
+              <i> Matías </i>
+            </b>
+            , I'm a student of Systems Enginnering, I'm a
+            <b>
+              <i> front-end developer </i>
+            </b>
+            ready to get his
+            <i>
+              <b> first job experience in IT </b>
+            </i>
+            , I've been working in some projects
+            <i> ( see below ) </i>
+            to put in practice all the things that I learned in the last year.
+            <b>
+              <i>
+                I love animals 😸 , technology 💻, team-work 👥 and I have a
+                mindset of never stop learning 📝.
+              </i>
+            </b>
           </p>
           <hr className={about.Vline} />
         </section>
@@ -115,6 +137,7 @@ export default function Home() {
                 btns={true}
                 link="https://darkstar.ar/"
                 repo="https://github.com/matiassalicru/darkstar"
+                deployed="Firebase"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -125,6 +148,7 @@ export default function Home() {
                 btns={true}
                 link="https://login-firebase.netlify.app/"
                 repo="https://github.com/matiassalicru/Login-app"
+                deployed="Netlify"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -135,6 +159,7 @@ export default function Home() {
                 btns={true}
                 link="https://react-app-cursofh.web.app/"
                 repo="https://github.com/matiassalicru/JournalApp"
+                deployed="Firebase"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -145,6 +170,7 @@ export default function Home() {
                 btns={true}
                 link="https://upo.com.ar/"
                 repo="https://github.com/matiassalicru/upo-bastidores"
+                deployed="CPanel"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -155,6 +181,7 @@ export default function Home() {
                 btns={true}
                 link="https://apptodos.netlify.app/"
                 repo="https://github.com/matiassalicru/TodoList"
+                deployed="Netlify"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -165,6 +192,7 @@ export default function Home() {
                 btns={true}
                 link=""
                 repo="https://github.com/matiassalicru/portfolio-2021"
+                deployed="Vercel"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -173,8 +201,9 @@ export default function Home() {
                 description="Gifs App using giphy Api, based on React, with a search bar"
                 img="https://i.ibb.co/JF4bdq3/giphy.png"
                 btns={true}
-                link="https://react-app-cursofh.web.app/"
-                repo="https://github.com/matiassalicru/JournalApp"
+                link="https://matiassalicru.github.io/Gif-Expert-App/"
+                repo="https://github.com/matiassalicru/Gif-Expert-App"
+                deployed="Firebase"
               />
             </SwiperSlide>
           </Swiper>
@@ -185,6 +214,7 @@ export default function Home() {
               img="https://i.ibb.co/tsFg4sV/todolist.png"
               link="https://apptodos.netlify.app/"
               repo="https://github.com/matiassalicru/TodoList"
+              deployed="Netlify"
               modal
             />
             <Project
@@ -193,6 +223,7 @@ export default function Home() {
               img="https://i.ibb.co/mJXqqYh/journal.png"
               link="https://react-app-cursofh.web.app/"
               repo="https://github.com/matiassalicru/JournalApp"
+              deployed="Firebase"
               modal
             />
             <Project
@@ -201,6 +232,7 @@ export default function Home() {
               img="https://i.ibb.co/1Zm1qHt/login.png"
               link="https://login-firebase.netlify.app/"
               repo="https://github.com/matiassalicru/Login-app"
+              deployed="Netlify"
               modal
             />
             <Project
@@ -209,6 +241,7 @@ export default function Home() {
               img="https://i.ibb.co/pZqJcr7/upo.png"
               link="https://upo.com.ar/"
               repo="https://github.com/matiassalicru/upo-bastidores"
+              deployed="CPanel"
               modal
             />
             <Project
@@ -218,6 +251,7 @@ export default function Home() {
               modal
               link="https://darkstar.ar/"
               repo="https://github.com/matiassalicru/darkstar"
+              deployed="Firebase"
             />
             <Project
               title="Gifs Expert App"
@@ -226,13 +260,15 @@ export default function Home() {
               modal
               link="https://matiassalicru.github.io/Gif-Expert-App/"
               repo="https://github.com/matiassalicru/Gif-Expert-App"
+              deployed="Github Pages"
             />
             <Project
               title="Portfolio"
               description="This portfolio made it with Next.JS, my very first project in Next, I have plans for very big changes upcoming!"
               img="https://i.ibb.co/NmMJ4vL/portfolio.png"
-              link="https://matiassalicru.github.io/Gif-Expert-App/"
-              repo="https://github.com/matiassalicru/Gif-Expert-App"
+              link="https://matiassalicru.com"
+              repo="https://github.com/matiassalicru/portfolio-2021"
+              deployed="Vercel"
               modal
             />
           </article>
