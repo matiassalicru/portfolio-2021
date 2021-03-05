@@ -88,7 +88,8 @@ export default function Home() {
             </i>
             I've been working in some projects
             <i> ( see below ) </i>
-            to put in practice all the things that I learned in the last year.
+            to put in practice all the things that I learned in the last year.{" "}
+            <br />
             <b>
               <i>
                 I love animals 😸 , technology 💻, team-work 👥 and I have a
