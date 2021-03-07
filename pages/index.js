@@ -58,6 +58,18 @@ export default function Home() {
           name="twitter:image"
           content="https://i.ibb.co/608kbZt/Header.png"
         />
+
+        <meta property="og:url" content="https://matiassalicru.com" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Portfolio Matías Salicrú" />
+        <meta
+          property="og:description"
+          content="Portfolio with projects from Matías Salicrú, know a little more about me"
+        />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/608kbZt/Header.png"
+        />
       </Head>
 
       <Layout>
