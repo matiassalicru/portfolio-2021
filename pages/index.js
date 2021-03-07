@@ -46,6 +46,18 @@ export default function Home() {
       <Head>
         <title>Matias Salicrú</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@matiassalicru" />
+        <meta name="twitter:title" content="Matias salicrú" />
+        <meta
+          name="twitter:description"
+          content="Portfolio with projects from Matías Salicrú, know a little more about me"
+        />
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/608kbZt/Header.png"
+        />
       </Head>
 
       <Layout>
