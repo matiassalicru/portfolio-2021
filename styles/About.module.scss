@@ -12,7 +12,8 @@
 
   .title {
     // font-family: "Against", sans-serif;
-    font-family: "Watone", sans-serif;
+    font-family: "CaviarDreams";
+    // font-family: "Watone", sans-serif;
     font-size: 3.5em;
     margin: 0;
   }
@@ -31,8 +32,11 @@
   .story {
     width: 70%;
     text-align: center;
-    font-family: "Roboto";
-    font-weight: 300;
+    font-family: "CaviarDreams", "Roboto";
+
+    span{
+      cursor: pointer;
+    }
   }
 
   .Vline {
@@ -44,6 +48,7 @@
     position: absolute;
     bottom: 15px;
   }
+
 }
 
 @media screen and(min-width: 480px) {

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-scroll";
 import Head from "next/head";
 import Layout from "components/Layout";
 import home from "styles/Home.module.scss";
@@ -74,14 +75,31 @@ export default function Home() {
 
       <Layout>
         <section data-aos="fade" className={home.backgroundColor}>
-          <section data-aos="fade" className={home.section}>
+          <section
+            data-aos="fade"
+            data-aos-duration="8000"
+            className={home.section}
+          >
             <div className={home.titleBox}>
-              <h1 className={home.title} data-text="Matias">
+              <h1
+                className={home.title}
+                data-aos="zoom-in"
+                data-aos-duration="8000"
+                data-aos-delay="600"
+              >
                 Matias
               </h1>
-              <h1 className={home.title} data-text="Salicrú">
+              <hr />
+              <h1
+                className={home.title}
+                data-aos="zoom-in"
+                data-aos-duration="8000"
+                data-aos-delay="600"
+              >
                 Salicrú
               </h1>
+
+              {/* <h1 className={home.title}>Salicrú</h1> */}
             </div>
             <h3 className={home.subtitle}>Front-end Developer</h3>
 
@@ -99,26 +117,21 @@ export default function Home() {
           <div className={about.profileImage}></div>
           <p className={about.story}>
             Hi! My name is
-            <b>
-              <i> Matías </i>
-            </b>
-            , I'm a student of Systems Enginnering, I'm a
-            <b>
-              <i> front-end developer </i>
-            </b>
+            <b> Matías </b>, I'm a student of Systems Enginnering, I'm a
+            <b> front-end web developer </b>
             ready to get his
-            <i>
-              <b> first job experience in IT, </b>
-            </i>
-            I've been working in some projects
-            <i> ( see below ) </i>
+            <b> first job experience in IT, </b>
+            I've been working in some projects{" "}
+            <span>
+              <Link to="projects" smooth={true}>
+                ( see below )
+              </Link>
+            </span>{" "}
             to put in practice all the things that I learned in the last year.{" "}
             <br />
             <b>
-              <i>
-                I love animals 😸 , technology 💻, team-work 👥 and I have a
-                mindset of never stop learning 📝.
-              </i>
+              I love animals 😸 , technology 💻 and team-work 👥 <br />
+              Mindset of never stop learning 📝.
             </b>
           </p>
           <hr className={about.Vline} />
@@ -144,13 +157,25 @@ export default function Home() {
 
           <p className={actual.p}>
             Right now I'm working in my last project, a website for a little
-            store called @darkstar.ar (you can visit it in my projects below)
-            while I'm also in a course about NodeJS.
+            store called{" "}
+            <a
+              href="https://darkstar.ar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @darkstar.ar
+            </a>{" "}
+            (you can visit it in my projects below) while I'm also in a course
+            about NodeJS.
           </p>
 
           <hr className={actual.Vline} />
         </section>
-        <section data-aos="fade-up" className={projects.container}>
+        <section
+          data-aos="fade-up"
+          className={projects.container}
+          id="projects"
+        >
           <h1 className={projects.title}>My projects</h1>
           <p className={projects.p}>
             All the experience that I earned, comes from this little projects

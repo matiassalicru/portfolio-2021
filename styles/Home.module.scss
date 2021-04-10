@@ -42,41 +42,45 @@
 .titleBox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 280px;
-  width: 300px;
-  height: 200px;
-  position: relative;
-  border-radius: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 50px;
+  // min-height: 600px;
+  // border: 1px solid red;
+  margin-bottom: 180px;
+  // width: fit-content;
+  min-height: 120px;
+  // position: relative;
 
   .title {
-    font-size: 3.5em;
+    font-size: 3.8em;
+    font-weight: 100;
+    font-family: "CaviarDreams";
     margin: 0;
-    text-transform: uppercase;
     box-sizing: border-box;
     padding: 0;
-    -webkit-text-stroke: 0.3vw #bdbdbd;
-    position: relative;
-    color: transparent;
+    // position: relative;
+    // text-transform: uppercase;
+    // -webkit-text-stroke: 0.3vw #222222;
+    // color: transparent;
 
-    &:first-of-type {
-      letter-spacing: 3px;
-    }
+    // &:first-of-type {
+    // letter-spacing: 3px;
+    // }
 
-    &::before {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      color: #100c16;
-      -webkit-text-stroke: 0vw transparent;
-      border-right: 2px solid #e6dbfa;
-      overflow: hidden;
-      animation: animate 10s linear infinite;
-    }
+    // &::before {
+    //   content: attr(data-text);
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   color: #100c16;
+    //   -webkit-text-stroke: 0vw transparent;
+    //   border-right: 2px solid #e6dbfa;
+    //   overflow: hidden;
+    //   animation: animate 10s linear infinite;
+    // }
 
     @keyframes animate {
       0%,
@@ -92,9 +96,9 @@
 }
 
 .subtitle {
-  font-family: "Caveat", "Watone";
+  font-family: "Caveat", "Watone", "CaviarDreams";
   position: absolute;
-  bottom: 100px;
+  bottom: 70px;
 }
 
 .Vline {
@@ -113,7 +117,7 @@
   color: #525252;
   right: -15px;
   font-size: 1.4em;
-  font-family: "Caveat", "Roboto";
+  font-family: "Caveat", "Roboto", "CaviarDreams";
 }
 
 .scrollArrow {
@@ -133,22 +137,21 @@
     .titleBox {
       display: flex;
       margin-bottom: 100px;
-      position: relative;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 50vw;
       height: 50vh;
-      position: relative;
       border-radius: 20px;
 
       .title {
-        font-family: "Watone", "Roboto";
+        font-family: "CaviarDreams";
+
         -webkit-text-stroke: 0;
-        font-size: 140px;
+        font-size: 100px;
         font-weight: 100;
-        letter-spacing: 10px;
-        transform: rotate(-13.25deg);
+        letter-spacing: 0px;
+        // transform: rotate(-13.25deg);
         color: #2e2e2e;
 
         &::before {
@@ -180,7 +183,7 @@
     .subtitle {
       font-size: 2em;
       font-weight: 100;
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
 
     .Vline {
