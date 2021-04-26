@@ -339,7 +339,7 @@ export default function Home() {
             className={projects.p}
             style={{ marginTop: 0, fontSize: 22, width: "fit-content" }}
             target="_blank"
-            href="https://drive.google.com/file/d/1f8i_7tjRLYS1vNQujAtMaoMCbohxyI9m/view?usp=sharing"
+            href="https://drive.google.com/file/d/1M3QZhbjCz6SVLEULqbfIwEcObGHzGPih/view?usp=sharing"
           >
             Download resume
           </a>
